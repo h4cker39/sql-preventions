@@ -5,7 +5,7 @@ Repository made for preventing sql injections. It can open up to inumerous frame
 
 
 Example:
-<h3>Hibernate Username and passsword SQLI precvention
+<h3>Hibernate Username and passsword SQLI prevention
 <hr>
    <br>
    
