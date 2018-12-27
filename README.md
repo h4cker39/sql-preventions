@@ -5,10 +5,16 @@ Repository made for preventing sql injections. It can open up to inumerous frame
 
 
 Example:
+<h3>Hibernate Username and passsword SQLI precvention
+<hr>
    <br>
    
-   
-   Query q = sessionFactory.getCurrentSession().createQuery("from LoginInfo where userName = :name");    
-    q.setParameter("name", userName);
-    List<LoginInfo> loginList = q.list();
-</br
+     public List<LoginInfo>(Strig username){
+     Query q = sessionFactory.getCurrentSession().createQuery("from LoginInfo where userName = :name");    
+  
+     q.setParameter("name", userName); 
+    List<LoginInfo> loginList = q.list(); 
+    return loginList;
+    }
+</br>
+<hr>
