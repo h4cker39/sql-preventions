@@ -9,7 +9,7 @@ Example:
 <hr>
    <br>
    
-     public List<LoginInfo>(Strig username){
+     public List<LoginInfo>(String username){
      Query q = sessionFactory.getCurrentSession().createQuery("from LoginInfo where userName = :name");    
   
      q.setParameter("name", userName); 
