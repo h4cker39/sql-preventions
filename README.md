@@ -5,9 +5,10 @@ Repository made for preventing sql injections. It can open up to inumerous frame
 
 
 Example:
-
-   Query q = sessionFactory.getCurrentSession().createQuery("from LoginInfo where userName = :name"); 
+   <br>
    
    
+   Query q = sessionFactory.getCurrentSession().createQuery("from LoginInfo where userName = :name");    
     q.setParameter("name", userName);
     List<LoginInfo> loginList = q.list();
+</br
